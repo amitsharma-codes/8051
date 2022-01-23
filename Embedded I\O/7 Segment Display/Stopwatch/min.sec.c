@@ -40,12 +40,10 @@ void disp_secs(unsigned int n)
 }
 void disp_mins(unsigned int n)
 {
-	seg_cat = a[n%10] + 0x80;
-	//seg_cat|= 0x80;       //For adding DOT
+	seg_cat = a[n%10] + 0x80; // putting DOT 
 	CA2=1;
 	delay_ms(2);
 	CA2=0;
-	//seg_cat&= ~(0x80);   //For removing DOT on other segment
 	
 	seg_cat = a[(n/10)%10];
 	CA1=1;
