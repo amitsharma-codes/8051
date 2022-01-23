@@ -1,0 +1,4 @@
+".\Objects\delay.obj",
+".\Objects\min.sec.obj" 
+TO ".\Objects\min" 
+PRINT(".\Listings\min.m51") RAMSIZE(256) 
